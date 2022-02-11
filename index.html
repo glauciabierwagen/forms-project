@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ad7474103a.js" crossorigin="anonymous"> </script>
+        <link rel="stylesheet" href="styles/form.css">
+		<title> Form Exercise </title>
+	</head>
+	<body>
+		<main class="page">
+			<form class="form" autocomplete="off">
+                <h1 class="title"> Subscription Form </h1>
+			    <h2 class="info"> Would you like to do a art course? Please fill out the form below! 
+                    <i class="fas fa-arrow-circle-down"> </i></h2>
+               	<label for="name" class="label_form"> Full name</label>
+                <input type="text" name="name" id="name" class="input_field" placeholder="Enter your name">
+                <label for="adress" class="label_form"> Adress </label>
+                <input type="text" name="adress" id="adress" class="input_field" placeholder="Enter your adress">
+                <label for="phone" class="label_form"> Phone number </label>
+                <input type="number" name="phone" id="phone" class="input_field" placeholder="Enter your name">
+				<label for="email" class="label_form"> Email address </label>
+				<input type="email" name="email" id="email" class="input_field" placeholder="Enter your email" required autofocus>
+				<div class="slc_wrapper">
+					<label for="select" class="label_form"> What type of art course(s) do you want to do? </label>
+					<i class="fas fa-caret-down select__icon"></i>
+					<select name="courses" class="select" id="select">
+						<option value="music"> Music </option>
+						<option value="dance"> Dance </option>
+						<option value="painting"> Painting </option>
+						<option value="sculpture" selected> Sculpture </option>
+						<option value="theater"> Theater </option>
+                        <option value="literature"> Literature </option>
+                        <option value="photography"> Photography </option>
+                        <option value="cinema"> Cinema </option>
+					</select>
+				</div>
+				<label for="password" class="label_form"> Your password </label>
+					<input type="password" name="password" id="password" class="input_field" placeholder="Enter your password" required minlength="6">
+				<label class="label_form label_large">
+					<div class="label__text"> Your message </div>
+                        <textarea name="message" cols="30" rows="6" class="textarea" placeholder="Enter your message"> </textarea>
+				</label>
+				<div class="checkbox_container">
+					<label class="check_label">
+							<input type="checkbox" checked>
+							<span class="check_custom rectangular"> </span>
+							<div class="check_title"> I'd like to receive information about courses on my email! </div>
+					</label>
+
+				</div>
+				<button type="submit" class="button" enable> Submit </button>
+			</form>
+		</main>
+	</body>
+</html>
